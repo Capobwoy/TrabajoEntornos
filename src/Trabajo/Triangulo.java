@@ -39,7 +39,11 @@ public class Triangulo {
   		System.out.println("introduce el lado 2 del rectangulo");
   		int lado2rec=scanner.nextInt();
   		System.out.println("El área del rectángulo es: " + areaRectangulo(lado1rec, lado2rec));
-}
+  		 //área de un cubo
+        System.out.println("Introduce el lado de un cubo: ");
+        int ladoCubo1 = scanner.nextInt();
+        System.out.println("El área de un cubo es: " + areaCubo(ladoCubo));
+	}
 	public static double AreaTriangulo(int base, int altura) {
 		double area=((base*altura)/2);
 		return area;
@@ -59,5 +63,8 @@ public class Triangulo {
 	public static double areaRectangulo(int lado1rec,int lado2rec) {
 		return ((lado1rec*2) + (lado2rec*2));
 	}
+	public static double areaCubo(int ladoCubo) {
+        return (ladoCuboladoCubo);
+    }
 	
 }
