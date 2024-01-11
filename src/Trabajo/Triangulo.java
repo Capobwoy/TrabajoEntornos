@@ -22,9 +22,17 @@ public class Triangulo {
         System.out.println("El área del triángulo es: " + area);
         
       //área y perímetro del círculo
-      		int radio = scanner.nextInt();
-      		System.out.println("el area de la circunferencia es: "+calaACirc(radio));
-      		System.out.println("el perimetro de la circunferencia es : "+perimetroACirc(radio));
+        System.out.println("Introduce el radio: ");
+      	int radio = scanner.nextInt();
+      	System.out.println("el area de la circunferencia es: "+calaACirc(radio));
+    	System.out.println("el perimetro de la circunferencia es : "+perimetroACirc(radio));
+      		
+      	//area de cilíndro
+      	System.out.println("Introduce la altura para el cilindro: ");
+        int alturaCil = scanner.nextInt();
+      	System.out.println("Introduce la radio para el cilindro: ");
+        int radioCil = scanner.nextInt();
+        System.out.println("El área del cilindro es: " + areaCilindro(alturaCil, radioCil));
 	}
 	public static double AreaTriangulo(int base, int altura) {
 		double area=((base*altura)/2);
@@ -32,11 +40,14 @@ public class Triangulo {
 	}
 	//Alumno 2 calcula el área y el perímetro del círculo
 	public static double calaACirc(int radio) {
-	double area = 3.14*(radio^2);
-	return area;
-}public static double perimetroACirc(int radio) {
-	double perimetro=2*(3.14*radio);
-	return perimetro;
-
-}
+		double area = 3.14*(radio^2);
+		return area;
+	}
+	public static double perimetroACirc(int radio) {
+		double perimetro=2*(3.14*radio);
+		return perimetro;
+	}
+	public static double areaCilindro(int alturaCil, int radioCil) {
+		return 2*3.14* alturaCil + 2*3.14* radioCil;
+	}
 }
