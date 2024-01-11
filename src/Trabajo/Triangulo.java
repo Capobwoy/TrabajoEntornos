@@ -39,6 +39,10 @@ public class Triangulo {
   		System.out.println("introduce el lado 2 del rectangulo");
   		int lado2rec=scanner.nextInt();
   		System.out.println("El área del rectángulo es: " + areaRectangulo(lado1rec, lado2rec));
+  	// calcular el volumen de un cubo
+        System.out.println("introduce un lado del cubo");
+        int ladocubo=scanner.nextInt();
+        System.out.println("el volumen del cubo es: "+volumenCubo(ladocubo));
 }
 	public static double AreaTriangulo(int base, int altura) {
 		double area=((base*altura)/2);
@@ -58,6 +62,10 @@ public class Triangulo {
 	}
 	public static double areaRectangulo(int lado1rec,int lado2rec) {
 		return ((lado1rec*2) + (lado2rec*2));
+	}
+	 public static double volumenCubo(int ladocubo) {
+	        double volumen=ladocubo*ladocubo*ladocubo;
+	        return volumen;
 	}
 	
 }
