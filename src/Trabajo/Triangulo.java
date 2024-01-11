@@ -20,9 +20,19 @@ public class Triangulo {
 
         // Mostrar el resultado
         System.out.println("El área del triángulo es: " + area);
+        
+      //área y perímetro del círculo
+      		int radio = entrada.nextInt();
+      		System.out.println("el area de la circunferencia es: "+calaACirc(radio));
+      		System.out.println("el perimetro de la circunferencia es : "+perimetroACirc(radio));
 	}
 	public static double AreaTriangulo(int base, int altura) {
 		double area=((base*altura)/2);
 		return area;
 	}
+	//Alumno 2 calcula el área y el perímetro del círculo
+	public static double calaACirc(int radio) {
+	double area = 3.14*(radio^2);
+	return area;
+}
 }
